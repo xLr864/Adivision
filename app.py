@@ -34,11 +34,11 @@ def import_and_predict(my_img1):
   if(ch=="Addition of value 255"):
     print("Addition\n")
     image_data = cv2.add(my_img1, 255)
-    cv2.imshow(image_data)
+    cv2.imshow("image_data",image_data)
   elif(ch=="Division of value 0.5"):
     print("Division\n")
     image_data = cv2.divide(my_img1, 0.5)
-    cv2.imshow(image_data)
+    cv2.imshow("image_data",image_data)
 
   st.image(image_data, use_column_width=True)
   return 0
